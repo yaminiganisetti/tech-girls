@@ -11,10 +11,10 @@ document.getElementById("share").addEventListener("click", () => {
     window.open("https://wa.me/?text=Hey%20Buddy%2C%20Join%20Tech%20For%20Girls%20Community", "_blank");
     clickCount++;
     localStorage.setItem("clickCount", clickCount);
-    document.getElementById("counter text").textContent = `Click count: ${clickCount}/5`;
+    document.getElementById("counterText").textContent = `Click count: ${clickCount}/5`;
 
     if (clickCount >= 5) {
-      document.getElementById("counter text").textContent += " - Sharing complete. Please continue.";
+      document.getElementById("counterText").textContent += " - Sharing complete. Please continue.";
       document.getElementById("submit").disabled = false;
     }
   }
